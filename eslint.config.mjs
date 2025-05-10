@@ -1,4 +1,5 @@
 import { FlatCompat } from '@eslint/eslintrc';
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -9,7 +10,9 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+/** @type { import('eslint').Linter.Config } */
 const eslintConfig = [
+  eslintConfigPrettier,
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
 ];
 
