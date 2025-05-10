@@ -2,6 +2,7 @@
   "name": "hero-ds",
   "version": "0.0.0",
   "private": false,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
