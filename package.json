@@ -3,6 +3,16 @@
   "version": "0.0.0",
   "private": false,
   "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build && tsup",
@@ -43,5 +53,33 @@
     "typescript": "^5",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.1.3"
-  }
+  },
+  "author": {
+    "name": "HeroKwon",
+    "email": "contact@herokwon.dev",
+    "url": "https://github.com/herokwon"
+  },
+  "bugs": {
+    "email": "contact@herokwon.dev",
+    "url": "https://github.com/herokwon/hero-ds/issues"
+  },
+  "contributors": [
+    {
+      "name": "HeroKwon",
+      "email": "contact@herokwon.dev",
+      "url": "https://github.com/herokwon"
+    }
+  ],
+  "keywords": [
+    "nextjs",
+    "tailwindcss",
+    "storybook",
+    "design-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herokwon/hero-ds.git"
+  },
+  "description": "This is a simple design-system built with Next.js and Tailwind CSS by HeroKwon.",
+  "license": "MIT"
 }
