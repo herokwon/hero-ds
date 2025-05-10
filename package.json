@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
   },
   "dependencies": {
     "next": "^15",
