@@ -35,4 +35,4 @@ assignees: herokwon
 
 <br />
 
-## 💬 참고 사항 (스크릿샷, URL, …)
+## 💬 참고 사항 (스크린샷, URL, …)
