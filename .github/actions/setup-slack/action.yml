@@ -42,8 +42,8 @@ runs:
         if [ "${{ inputs.published }}" == "true" ]; then
           echo '${{ inputs.published_packages }}' > packages.json
 
-          PACKAGE_NAME=$(jq -r '.[0].name' packages.json) >> $GITHUB_ENV
-          PACKAGE_VERSION=$(jq -r '.[0].version' packages.json) >> $GITHUB_ENV
+          PACKAGE_NAME=$(jq -r '.[0].name' packages.json)
+          PACKAGE_VERSION=$(jq -r '.[0].version' packages.json)
 
           echo '{
             "channel": "${{ inputs.slack_channel_id }}",
