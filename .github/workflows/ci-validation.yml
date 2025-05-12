@@ -62,7 +62,7 @@ jobs:
     name: Merge
     needs: [check-lint, check-types, test]
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    if: startsWith(github.head_ref, 'changeset-release') || github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
       - name: Merge pull request
         run: gh pr merge --auto --squash "$PR_URL" --delete-branch
