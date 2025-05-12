@@ -14,7 +14,7 @@ assignees: herokwon
 
 ## 💡 상세 내용
 
-- [x] 
+- [ ] 
 
 <br />
 
