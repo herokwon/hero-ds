@@ -10,6 +10,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 permissions:
   contents: write
   pull-requests: read
+  id-token: write # changesets을 통한 npm 배포 관련 권한
 
 jobs:
   run-changesets:

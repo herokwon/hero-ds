@@ -14,7 +14,7 @@ assignees: herokwon
 
 ## 🛠 작업 항목
 
-- []
+- [ ] 
 
 <br />
 
