@@ -30,7 +30,7 @@ inputs:
 outputs:
   file-path:
     description: The path to the payload file
-    value: ${{ steps.payload.outputs.FILE_PATH }}
+    value: ${{ steps.payload.outputs.file-path }}
 
 runs:
   using: 'composite'
