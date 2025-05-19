@@ -1,3 +1,5 @@
+import storybook from 'eslint-plugin-storybook';
+
 import { FlatCompat } from '@eslint/eslintrc';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import { dirname } from 'path';
@@ -13,6 +15,7 @@ const compat = new FlatCompat({
 /** @type { import('eslint').Linter.Config } */
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...storybook.configs['flat/recommended'],
   eslintConfigPrettier,
 ];
 
