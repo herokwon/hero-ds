@@ -55,6 +55,9 @@ jobs:
       - name: Setup environment
         uses: ./.github/actions/setup-env
 
+      - name: Install playwright browsers
+        run: npx playwright install
+
       - name: Run test
         run: npm run test
 
