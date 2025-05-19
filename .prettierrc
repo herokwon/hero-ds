@@ -6,6 +6,7 @@
     "^@testing-library",
     "^react(.*)$",
     "^next(.*)$",
+    "^.*storybook.*$",
     "<THIRD_PARTY_MODULES>",
     "(.css)$",
     "^[./]"
