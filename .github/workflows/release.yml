@@ -28,6 +28,9 @@ jobs:
         with:
           cache: true
 
+      - name: Run build
+        run: npm run build
+
       - name: Run chromatic
         id: chromatic
         uses: chromaui/action@latest
