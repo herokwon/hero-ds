@@ -4,6 +4,5 @@
   "autoAcceptChanges": "main",
   "onlyChanged": true,
   "skip": "dependabot/**",
-  "storybookBuildDir": "storybook-static",
   "zip": true
 }
